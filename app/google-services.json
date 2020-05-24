@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "624771585099",
+    "firebase_url": "https://kabarakofficialap-8d797.firebaseio.com",
+    "project_id": "kabarakofficialap-8d797",
+    "storage_bucket": "kabarakofficialap-8d797.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:624771585099:android:a65e3a44cdf1df86dda9ce",
+        "android_client_info": {
+          "package_name": "com.kabarakuniversityforumApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "624771585099-qpudbcbjacjk5lj0bo53fmuc62ki91e3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMYenLyqqVhNck6iLGwRhd6PzLucB_zSw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "624771585099-qpudbcbjacjk5lj0bo53fmuc62ki91e3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

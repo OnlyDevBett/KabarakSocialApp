@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:menuCategory="container"
+        >
+        <item
+            android:title="Chats"
+            android:id="@+id/menu_chats"
+            app:showAsAction="always"
+            android:icon="@drawable/ic_chats"
+            android:orderInCategory="10"
+            />
+        <item
+            android:title="Notifications"
+            android:id="@+id/menu_notifications"
+            app:showAsAction="always"
+            android:icon="@drawable/drawable_badge"
+            android:orderInCategory="10"
+            />
+        <item
+            android:title="Add Lecturer"
+            android:id="@+id/menu_lecturer"
+            app:showAsAction="never"
+            android:orderInCategory="10"
+            />
+        <item
+            android:title="Add Admin"
+            android:id="@+id/menu_admin"
+            app:showAsAction="never"
+            android:orderInCategory="10"
+            />
+        <item
+            android:title="Personal Details"
+            android:id="@+id/menu_join"
+            app:showAsAction="never"
+            android:orderInCategory="10"
+            />
+        <item
+            android:title="Settings"
+            android:id="@+id/menu_settings"
+            app:showAsAction="never"
+            android:orderInCategory="10"
+            />
+        <item
+            android:title="Logout"
+            android:id="@+id/menu_logout"
+            app:showAsAction="never"
+            android:orderInCategory="10"
+            />
+    </group>
+
+</menu>

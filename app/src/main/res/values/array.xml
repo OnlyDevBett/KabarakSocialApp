@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="schools">
+        <item>Select School</item>
+        <item>Law</item>
+        <item>Business</item>
+        <item>Education</item>
+        <item>Computer Science</item>
+        <item>Theology</item>
+        <item>Medicine</item>
+        <item>Music</item>
+        <item>Post Graduate</item>
+    </string-array>
+
+</resources>

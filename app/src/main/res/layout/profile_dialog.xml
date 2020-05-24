@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/transparent"
+    android:layout_width="wrap_content"
+    android:fitsSystemWindows="true"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="@color/white">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/image_profile_dialog"
+            android:src="@drawable/profile_picture"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:padding="4dp"
+            android:id="@+id/tv_username_profile_dialog"
+            android:background="@color/translusent"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="19dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/image_profile_dialog"
+            android:background="@color/translusent"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:src="@drawable/ic_action_info"
+                android:id="@+id/image_info_dialog"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

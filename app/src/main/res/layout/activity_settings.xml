@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".ProfileIssues.Settings">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar_settings"
+        android:background="@color/colorPrimaryDark"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:fitsSystemWindows="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:id="@+id/image_back_settings"
+                android:src="@drawable/ic_action_back_to_parent"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="Settings"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linearProfile"
+                android:layout_marginTop="8dp"
+                android:fitsSystemWindows="true"
+                android:background="@color/white">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image_settings"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/profile_picture"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:fitsSystemWindows="true">
+
+
+                    <TextView
+                        android:id="@+id/tv_username_settings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Username"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:id="@+id/tv_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="2dp"
+                        android:layout_marginLeft="35dp"
+                        android:text="Proud to be part of Kabarak Community"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        tools:targetApi="o" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Personal Details:"
+                android:background="@color/lightGrray"
+                android:textStyle="bold"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:id="@+id/tv_personal_details"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Social Media:"
+                android:textStyle="bold"
+                android:background="@color/lightGrray"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Facebook"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/Blue"
+                android:drawableLeft="@drawable/about_icon_facebook"
+                android:layout_marginLeft="16dp"
+                tools:targetApi="m" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="46dp"
+                android:linksClickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:id="@+id/tv_facebook_details"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Twitter"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/about_icon_twitter"
+                android:layout_marginLeft="16dp"
+                android:drawableTint="@color/SkyBlue"
+                tools:targetApi="m" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="46dp"
+                android:linksClickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:id="@+id/tv_twitter_details"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Instagram"
+                android:drawablePadding="10dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableLeft="@drawable/about_icon_instagram"
+                android:layout_marginLeft="16dp"
+                android:drawableTint="@color/OrangeRed"
+                tools:targetApi="m" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:linksClickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_marginLeft="46dp"
+                android:id="@+id/tv_instagram_details"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Account Deletion:"
+                android:id="@+id/tv_accountDeletion"
+                android:textStyle="bold"
+                android:background="@color/lightGrray"
+                android:textSize="16dp"/>
+            <Button
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAllCaps="false"
+                android:text="Delete Account"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/btn_deletion"
+                android:theme="@style/PrimaryFlatButton"
+                android:textColor="@color/grey"
+                android:drawableTop="@drawable/ic_action_delete"
+                android:drawableTint="@color/red"
+                tools:targetApi="m" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
